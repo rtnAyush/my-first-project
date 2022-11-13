@@ -1,399 +1,388 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap');
 
 body {
-    background-color: #b1a7a5;
-    font-family: 'Baloo Bhai 2', cursive;
+  background-color: #b1a7a5;
+  font-family: 'Baloo Bhai 2', cursive;
 }
 
 .grid {
-    border: 10px solid white;
-    border-radius: 20px;
-    background-color: #e5e5e5;
-    display: grid;
-    grid-row-gap: 250px;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 10px 45px;
-    grid-template-areas:
-        "navbar navbar navbar"
-        ". intro intro"
-        "webskill progskill learnskill"
-        "project project project"
-        "suggest suggest suggest";
+  border: 10px solid white;
+  border-radius: 20px;
+  background-color: #e5e5e5;
+  display: grid;
+  grid-row-gap: 250px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10px 45px;
+  grid-template-areas:
+    "navbar navbar navbar"
+    ". intro intro"
+    "webskill progskill learnskill"
+    "project project project"
+    "suggest suggest suggest";
 }
-
 
 /* navigation pannel */
 .navbar {
-    /* border: 6px solid white; */
-    grid-area: navbar;
-    width: max-content;
-    margin: 10px auto;
+  grid-area: navbar;
+  width: max-content;
+  margin: 10px auto;
 }
 
 ul {
-    padding: 0px;
+  padding: 0px;
 }
 
 .navbar li {
-    /* border: 2px solid orange; */
-    display: inline;
+  display: inline;
 }
 
 .navbar li a {
-    /* padding: 5px; */
-    /* border: 4px solid #ea3057; */
-    /* background-color: white; */
-    border-radius: 15px;
-    margin: 2px 20px;
-    text-decoration: none;
-    color: black;
+  border-radius: 15px;
+  margin: 2px 20px;
+  text-decoration: none;
+  color: black;
 }
-#active{
-    text-decoration: underline;
+
+#active {
+  text-decoration: underline;
 }
+
 .navbar li a:hover {
-    padding: 5px;
-    margin: 2px 20px;
-    text-decoration: none;
-    background-color: gray;
-    color: rgb(255, 255, 255);
-    border-radius: 15px;
+  padding: 5px;
+  margin: 2px 20px;
+  text-decoration: none;
+  background-color: gray;
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
 }
 
 /* intro pannel */
 .intro {
-    grid-area: intro;
-    border: 10px solid rgb(255, 255, 255);
-    margin: 10px 20px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas:
-        "introtext myphoto";
+  grid-area: intro;
+  border: 10px solid rgb(255, 255, 255);
+  margin: 10px 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "introtext myphoto";
 }
 
 .myphoto {
-    /* border: 2px solid purple; */
-    grid-area: myphoto;
-    width: 225px;
+  grid-area: myphoto;
+  width: 225px;
 }
 
 .introtext {
-    /* border: 2px solid purple; */
-    grid-area: introtext;
-
+  grid-area: introtext;
 }
 
 .introtext img {
-    width: 100%;
+  width: 100%;
 }
 
 .introtext {
-    background-image: url("/img/logo.gif");
-    background-repeat: no-repeat;
-    background-size: 90%;
+  background-image: url("../img/logo.gif");
+  background-repeat: no-repeat;
+  background-size: 90%;
 }
 
 .introtext p {
-    color: #ea3057;
+  color: #ea3057;
 }
 
 .introtext p,
 .introtext h3 {
-    position: relative;
-    top: 150px;
-    margin: 10px 80px;
-    text-align: left;
+  position: relative;
+  top: 150px;
+  margin: 10px 80px;
+  text-align: left;
 }
-.introtext p a{
-    text-decoration: none;
-    color: black;
-    border: 3px dotted white;
-    border-radius: 30px;
-    margin: 10px;
-    font-size: 12px;
-    padding: 5px;
+
+.introtext p a {
+  text-decoration: none;
+  color: black;
+  border: 3px dotted white;
+  border-radius: 30px;
+  margin: 10px;
+  font-size: 12px;
+  padding: 5px;
 }
-.introtext p a:hover{
-    background-color: gray;
-    color: white;
+
+.introtext p a:hover {
+  background-color: gray;
+  color: white;
 }
+
 #myname {
-    font-size: 40px;
-    text-decoration: underline;
+  font-size: 40px;
+  text-decoration: underline;
 }
 
 /* skill pannel */
-/* .skills {
-    border: 2px solid purple;
-
-} */
 
 .webskill {
-    grid-area: webskill;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        'webtext webtext'
-        'weblogo weblevel';
-    background-color: #e5e9e9;
-    border: 10px solid white;
-    margin: 10px 10px;
-    border-radius: 45px 0;
+  grid-area: webskill;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'webtext webtext'
+    'weblogo weblevel';
+  background-color: #e5e9e9;
+  border: 10px solid white;
+  margin: 10px 10px;
+  border-radius: 45px 0;
 }
 
 .webskill h3 {
-    grid-area: webtext;
-    padding: 0px;
-    margin: 0px;
-    /* width: 10px; */
-    height: 30px;
+  grid-area: webtext;
+  padding: 0px;
+  margin: 0px;
+  height: 30px;
 }
 
 #weblogo {
-    grid-area: weblogo;
+  grid-area: weblogo;
 }
 
 #weblevel {
-    grid-area: weblevel;
+  grid-area: weblevel;
 }
 
 .progskill {
-    grid-area: progskill;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        'progtext progtext'
-        'proglogo proglevel';
-    background-color: #e5e9e9;
-    border: 10px solid white;
-    border-radius: 30px;
+  grid-area: progskill;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'progtext progtext'
+    'proglogo proglevel';
+  background-color: #e5e9e9;
+  border: 10px solid white;
+  border-radius: 30px;
 }
 
 .progskill h3 {
-    grid-area: progtext;
-    padding: 0px;
-    margin: 0px;
-    height: 30px;
-    text-align: center;
+  grid-area: progtext;
+  padding: 0px;
+  margin: 0px;
+  height: 30px;
+  text-align: center;
 }
 
 #proglogo {
-    grid-area: proglogo;
+  grid-area: proglogo;
 }
 
 #proglevel {
-    grid-area: proglevel;
+  grid-area: proglevel;
 }
 
 .learnskill {
-    grid-area: learnskill;
-    /* display: grid; */
-    /* grid-template-areas:
-        'skill-logo'; */
-    background-color: #e5e9e9;
-    border: 10px solid white;
-    margin: 10px 10px;
-    border-radius: 0 46px;
+  grid-area: learnskill;
+  background-color: #e5e9e9;
+  border: 10px solid white;
+  margin: 10px 10px;
+  border-radius: 0 46px;
 }
 
 .learnskill h3 {
-    /* grid-area: progtext; */
-    padding: 0px;
-    margin: 0px;
-    height: 30px;
-    text-align: right;
+  padding: 0px;
+  margin: 0px;
+  height: 30px;
+  text-align: right;
 }
-.learnskill p{
-    display: block;
-    text-align: center;
+
+.learnskill p {
+  display: block;
+  text-align: center;
 }
+
 #skill-logo {
-    grid-area: logo;
+  grid-area: logo;
 }
 
 #skill-level {
-    grid-area: level;
+  grid-area: level;
 }
 
 .skills img {
-    display: block;
-    width: 80px;
-    margin: 15px auto;
+  display: block;
+  width: 80px;
+  margin: 15px auto;
 }
 
 /* level type */
 .level {
-    font-size: 14px;
-    margin-top: 26%;
-    padding: 2px;
+  font-size: 14px;
+  margin-top: 26%;
+  padding: 2px;
 }
 
 .level33 {
-    background-color: greenyellow;
-    /* border: 2px solid red; */
-    width: 41%;
-    border-radius: 15px;
+  background-color: greenyellow;
+  /* border: 2px solid red; */
+  width: 41%;
+  border-radius: 15px;
 }
 
 .level50 {
-    background-color: rgb(241, 255, 47);
-    /* border: 2px solid red; */
-    width: 50%;
-    border-radius: 15px;
+  background-color: rgb(241, 255, 47);
+  /* border: 2px solid red; */
+  width: 50%;
+  border-radius: 15px;
 }
 
 .level66 {
-    background-color: rgb(255, 182, 47);
-    width: 70%;
-    /* border: 2px solid red; */
-    border-radius: 15px;
+  background-color: rgb(255, 182, 47);
+  width: 70%;
+  /* border: 2px solid red; */
+  border-radius: 15px;
 }
 
 .level99 {
-    background-color: rgb(255, 85, 47);
-    width: 99%;
-    /* border: 2px solid red; */
-    border-radius: 15px;
-
+  background-color: rgb(255, 85, 47);
+  width: 99%;
+  /* border: 2px solid red; */
+  border-radius: 15px;
 }
 
 /* project pannel */
 .projects {
-    grid-area: project;
-    border: 5px solid white;
-    margin: 0px 5px;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,min-max(400px));
-    grid-template-areas:
-        ". protext protext ."
-        "portfolio portfolio portfolio portfolio";
+  grid-area: project;
+  border: 5px solid white;
+  margin: 0px 5px;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, min-max(400px));
+  grid-template-areas:
+    ". protext protext ."
+    "portfolio portfolio portfolio portfolio";
 }
 
 .projects h2 {
-    grid-area: protext;
-    text-align: center;
+  grid-area: protext;
+  text-align: center;
 }
 
 .problock {
-    margin: 10px 10px;
-    border: 6px solid #ea3057;
-    background-color: #ea3057;
-    border-radius: 5px;
+  margin: 10px 10px;
+  border: 6px solid #ea3057;
+  background-color: #ea3057;
+  border-radius: 5px;
 }
 
 #portfolio {
-    grid-area: portfolio;
-    width: 400px;
-    
+  grid-area: portfolio;
+  width: 400px;
 }
-.problock a:hover{
-    width: 390px;
-    background-color: black;
-    display: block;
-    margin: auto;
+
+.problock a:hover {
+  width: 390px;
+  background-color: black;
+  display: block;
+  margin: auto;
 }
+
 #p1 {
-    grid-area: p1;
+  grid-area: p1;
 }
 
 #p2 {
-    grid-area: p2;
+  grid-area: p2;
 }
 
 #p3 {
-    grid-area: p3;
+  grid-area: p3;
 }
 
-
 .problock img {
-    width: 100%;
+  width: 100%;
 }
 
 /* suggestion pannel */
 .suggest {
-    border: 2px solid black;
-    grid-area: suggest;
-    background-color: gray;
-    border-radius: 0 0 20px 20px;
+  border: 2px solid black;
+  grid-area: suggest;
+  background-color: gray;
+  border-radius: 0 0 20px 20px;
 }
 
 .form-group {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-row-gap: 30px;
-    align-items: center;
-    grid-template-areas:
-        'stext stext'
-        'int-btn mess-btn'
-        'sub-btn sub-btn'
-        'icons icons'
-        'copyrt copyrt';
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 30px;
+  align-items: center;
+  grid-template-areas:
+    'stext stext'
+    'int-btn mess-btn'
+    'sub-btn sub-btn'
+    'icons icons'
+    'copyrt copyrt';
 }
 
 .suggest input {
-    text-align: center;
-    width: 50%;
-    padding: 14px;
-    margin: 10px auto;
-    border-radius: 12px;
+  text-align: center;
+  width: 50%;
+  padding: 14px;
+  margin: 10px auto;
+  border-radius: 12px;
 }
 
 .btn {
-    border: 1px solid black;
-    border-radius: 10px;
-    font-family: 'Baloo Bhai 2', cursive;
-    width: 371px;
-    font-size: 20px;
-    padding: 10px;
-    margin: 34px auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-family: 'Baloo Bhai 2', cursive;
+  width: 371px;
+  font-size: 20px;
+  padding: 10px;
+  margin: 34px auto;
 }
 
 .suggesttext {
-    grid-area: stext;
-    text-align: center;
+  grid-area: stext;
+  text-align: center;
 }
 
 .input-btn {
-    grid-area: int-btn;
-    display: block;
-    text-align: center;
+  grid-area: int-btn;
+  display: block;
+  text-align: center;
 }
 
 .message-box {
-    grid-area: mess-btn;
-    display: block;
-    margin: 1px auto;
+  grid-area: mess-btn;
+  display: block;
+  margin: 1px auto;
 }
 
 .submit-btn {
-    display: block;
-    grid-area: sub-btn;
+  display: block;
+  grid-area: sub-btn;
 }
-/* side bar pannel */
 
+/* side bar pannel */
 .icons {
-    grid-area: icons;
-    /* border: 2px solid red; */
-    margin: 2px auto;
+  grid-area: icons;
+  /* border: 2px solid red; */
+  margin: 2px auto;
 }
-.icons i{
-    /* border: 2px solid red; */
-    margin: 10px auto;
-    padding: 20px;
+
+.icons i {
+  /* border: 2px solid red; */
+  margin: 10px auto;
+  padding: 20px;
 }
 
 .icons a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 .icons a:hover {
-    filter: invert();
-    text-decoration: underline;
+  filter: invert();
+  text-decoration: underline;
 }
-#copyrt{
-    grid-area: copyrt;
-    text-align: center;
+
+#copyrt {
+  grid-area: copyrt;
+  text-align: center;
 }
